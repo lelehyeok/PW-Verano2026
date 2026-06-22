@@ -1,4 +1,4 @@
-<img src="https://avatars.githubusercontent.com/u/27718680?v=4" width="150" alt="Foto de perfil " />
+<img src="https://avatars.githubusercontent.com/u/190448575?v=4" width="150" alt="Foto de perfil " />
 
 # 👋 Hola, soy Lilith Haro
 
