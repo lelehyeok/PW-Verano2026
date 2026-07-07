@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #0056b3;
+    text-align: center;
+}
+
+h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #004494;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff6600;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+}
+
+fieldset {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #0056b3;
+    font-size: 18px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 90%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: auto;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #004494;
+}
+
+ul, ol {
+    margin-left: 20px;
+    line-height: 1.6;
+}
