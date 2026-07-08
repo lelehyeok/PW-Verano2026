@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                font-family: Helvetica, Arial, sans-serif;
+                background: #f0f2f5;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            main{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 900px;
+                padding: 20px;
+            }
+
+            .lado_izq{
+                width: 500px;
+                padding-right: 32px;
+                box-sizing: border-box;
+                margin-top: -40px;
+            }
+
+            h1{
+                color: #1877f2;
+                font-size: 60px;
+                margin-bottom: 10px;
+                letter-spacing: -1px;
+            }
+
+            .texto_titulo{
+                font-size: 28px;
+                line-height: 32px;
+                margin: 0;
+            }
+
+            .texto_pag {
+                text-align: center;
+                margin-top: 25px;
+                font-size: 14px;
+                color: #1c1e21;
+            }
+
+            
+
+            .lado_der{
+                width: 396px;
+            }
+
+            .formulario{
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+            }
+
+            .input-texto{
+                width: 100%;
+                padding: 14px 16px;
+                margin-bottom: 12px;
+                border: 1px solid #dddfe2;
+                border-radius: 6px;
+                font-size: 17px;
+                box-sizing: border-box;
+            }
+
+            .input-texto:focus {
+                border-color: #1877f2;
+                box-shadow: 0 0 0 2px #e7f3ff;
+                outline: none;
+            }
+
+            .iniciar{
+                background-color: #0866ff; 
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px 16px;
+                cursor: pointer;
+                margin-bottom: 15px;
+            }
+
+            .iniciar:hover{
+                background-color: #166fe5;
+            }
+
+            .pass{
+                color: #1877f2;
+                text-align: center;
+                text-decoration: none;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+
+            .pass:hover{
+                text-decoration: underline;
+            }
+
+            .division{
+                border: 0;
+                border-top: 1px solid #dadde1;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+
+            .crear_cuenta{
+                background-color: #42b72a;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 17px;
+                font-weight: bold;
+                padding: 14px 16px;
+                cursor: pointer;
+                width: max-content;
+                margin: 0 auto;
+            }
+
+            .crear_cuenta:hover{
+                background-color: #36a420;
+            }
+            
+           
+            @media (max-width: 950px) {
+   
+            main {
+                flex-direction: column;
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+
+            .lado_izq {
+                width: 100%;
+                max-width: 400px; 
+                padding-right: 0; 
+                margin-top: 0; 
+                margin-bottom: 40px; 
+                text-align: center; 
+            }
+
+    
+            .texto_titulo p {
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            .lado_der {
+                width: 100%;
+                max-width: 400px; 
+            }
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="lado_izq">
+                <div class="Titulo">
+                    <h1>facebook</h1>
+                </div>
+                <div class="texto_titulo">
+                    <p>Facebook te ayuda a comunicarte y <br>
+                        compartir con las personas que forman
+                        parte de tu vida</p>
+                </div>
+            </div>
+            <div class="lado_der">
+                <form class="formulario">
+                    <input type="text" class="input-texto" placeholder="Correo eléctronico o número de teléfono"><br>
+                    <input type="password" placeholder="Contraseña" class="input-texto">
+                    <button type="submit" class="iniciar">Iniciar sesión</button>
+                    <a href="#" class="pass">¿Olvidaste tu contraseña?</a>
+                    <hr class="division">
+                    <button type="submit" class="crear_cuenta">Crear cuenta nueva</button>
+                </form>
+                <p class="texto_pag"><strong>Crea una página </strong> para una celebridad, una marca o un negocio</p>
+            </div>
+       </main>
+    </body>
+</html>
