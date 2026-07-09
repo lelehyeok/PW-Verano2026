@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login X</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                background-color: black;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            main{
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .lado-izq{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .lado-izq svg{
+                fill: white;
+                width: 350px;
+            }
+
+            .lado-der{
+                flex: 1;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 600px;
+            }
+
+            h1{
+                font-size: 64px;
+                margin-bottom: 40px;
+                line-height: 1.1;
+            }
+
+            h2{
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+
+            .b{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                padding: 10px;
+                border-radius: 25px;
+                border: none;
+                margin-bottom: 15px;
+                font-weight: bold;
+                cursor: pointer;
+                font-size: 15px;
+                gap: 10px   ;
+            }
+
+            .google, .apple{
+                background-color: white;
+                color: black;
+            }
+
+            .crear{
+                background-color: #1d9bf0;
+                color: white;
+                margin-top: 15px;
+            }
+
+            .blogin{
+                background-color: transparent;
+                color: #1d9bf0;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+            }
+
+            .blogin:hover{
+                background-color: rgba(29, 155, 240, 0.1);
+            }
+
+            .divisor{
+                display: flex;
+                align-items: center;
+                width: 300px;
+                margin: 10px 0;
+                color: #71767b;
+                font-size: 14px;
+            }
+
+            .divisor::before, .divisor::after{
+                content: "";
+                flex: 1;
+                border-bottom: 1px solid #2f3336;
+                margin: 0 10px;
+            }
+
+            .terminos{
+                width: 300px;
+                font-size: 11px;
+                color: #71767b;
+                margin-bottom: 40px;
+                line-height: 1.4;
+            }
+
+            .terminos a{
+                color: #1d9bf0;
+                text-decoration: none;
+            }
+
+            .terminos a:hover{
+                text-decoration: underline;
+            }
+
+            .login{
+                font-size: 17px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            footer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            footer a {
+                color: #71767b;
+                text-decoration: none;
+                font-size: 13px;
+            }
+            
+            footer a:hover {
+                text-decoration: underline;
+            }
+
+            .icono-btn {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+            }
+
+            @media (max-width: 1000px) {
+                main {
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 40px 20px;
+                }
+
+                .lado-izq {
+                    flex: 0; 
+                    margin-bottom: 40px;
+                }
+
+                .lado-izq svg {
+                    width: 80px; 
+                }
+
+                .lado-der {
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                    max-width: 400px; 
+
+                }
+
+                h1 {
+                    font-size: 45px;
+                    margin-bottom: 20px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="lado-izq">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <g>
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="lado-der">
+                <h1>Lo que está <br>pasando ahora</h1>
+                <h2>Únete hoy</h2>
+                <button class="b google">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logotipo de Google" class="icono-btn">
+                    Registrarse con Google
+                </button>
+                <button class="b apple">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logotipo de Apple" class="icono-btn">
+                    Registrarse con Apple
+                </button>
+                <div class="divisor">o</div>
+                <button class="b crear">Crear cuenta</button>
+                <div class="terminos">
+                    Al registrarse aceptas los <a href="#">Términos de servicio</a> y la <a href="#">Política de privacidad</a>, incluida la Política de Uso de Cookies
+                </div>
+                <div class="login">
+                    ¿Ya tienes una cuenta?
+                    <button class="b blogin">Iniciar sesión</button>
+                </div>
+            </div><!--Div lado derecho-->
+        </main>
+
+        <footer>
+            <a href="#">Información</a>
+            <a href="#">Descarga la app de X</a>
+            <a href="#">Grok</a>
+            <a href="#">Centro de Ayuda</a>
+            <a href="#">Condiciones de Servicio</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Política de Cookies</a>
+            <a href="#">Accesibilidad</a>
+            <a href="#">Información de anuncios</a>
+            <a href="#">Blog</a>
+            <a href="#">Empleos</a>
+            <a href="#">Recursos para marcas</a>
+            <a href="#">Publicidad</a>
+            <a href="#">Marketing</a>
+            <a href="#">X para empresas</a>
+            <a href="#">Desarrolladores</a>
+            <a href="#">Guía</a>
+            <a href="#">Configuración</a>
+            <a href="#">2025 X Corp</a>
+        </footer>
+    </body>
+</html>
