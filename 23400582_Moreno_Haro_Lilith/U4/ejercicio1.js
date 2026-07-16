@@ -36,7 +36,7 @@
         num = num5();
         console.log(num)
     } while (num != 0)
-    */
+    
 
 /*
     Ejercicio 3
