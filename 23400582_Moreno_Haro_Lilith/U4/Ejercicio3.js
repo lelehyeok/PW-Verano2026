@@ -34,7 +34,7 @@ do {
             d = d + msj;
             break;
         case 3:
-            msj = parseFloat(prompt("¿Cuanto dinero desea rettirar?"));
+            msj = parseFloat(prompt("¿Cuanto dinero desea retirar?"));
             d = d - msj;
             break;
         case 4:

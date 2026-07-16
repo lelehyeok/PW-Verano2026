@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>CRUD de peliculas</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>CRUD de Peliculas</h1>
+        <form id="formulario">
+            <input type="hidden" placeholder="Id" id="id">
+            <input type="text" placeholder="Titulo" id="titulo">
+            <input type="text" placeholder="Director" id="director" >
+            <input type="number" placeholder="Año" id="anio">
+            <button type="submit">Guardar</button>
+        </form>
+        <table>
+            <head>
+                <tr>
+                    <th>ID</th>
+                    <th>Titulo</th>
+                    <th>Director</th>
+                    <th>Año</th>
+                    <th>Acciones</th>
+                </tr>
+            </head>
+            <tbody id="tablaPeliculas"></tbody>
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html>
